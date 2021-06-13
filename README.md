@@ -1,1 +1,1 @@
-cool git
+the cool git
