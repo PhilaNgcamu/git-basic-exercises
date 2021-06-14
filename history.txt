@@ -1,0 +1,335 @@
+    1  mkdir git-basic-exercises
+    2  cd git-basic-exercises/
+    3  ls -a
+    4  git init
+    5  ls -a
+    6  git status
+    7  touch READ.md
+    8  ls -a
+    9  git status
+   10  git log
+   11  git add .
+   12  git status
+   13  mkdir git-basic-exercises
+   14  cd git-basic-exercises/
+   15  ls -a
+   16  git init
+   17  ls -a
+   18  git status
+   19  touch README.md
+   20  ls -a
+   21  git status
+   22  git log
+   23  git add .
+   24  git status
+   25  git reset -- README.md
+   26  git status
+   27  git add .
+   28  git commit -m "initial commit"
+   29  git log
+   30  nano README.md
+   31  cat README.md
+   32  git status
+   33  git add .
+   34  git commit -m "second commit"
+   35  nano README.md
+   36  cat README.md
+   37  git status
+   38  git add .
+   39  git commit -m "third commit"
+   40  git log
+   41  git checkout a572f5394ec0fbc22f5e563b98fe724e6ee2d533
+   42  cat README.md
+   43  git checkout master
+   44  cat README.md
+   45  git branch milkshake-flavours
+   46  git branch
+   47  git checkout milkshake-flavours 
+   48  git branch
+   49  nano milkshakes.md
+   50  git status
+   51  git add .
+   52  git commit -m "added initial flavours"
+   53  git log
+   54  git checkout master 
+   55  git branch history
+   56  git checkout history 
+   57  git log
+   58  history > history.txt
+   59  git add .
+   60  git commit -m "added history"
+   61  git log
+   62  git checkout milkshake-flavours 
+   63  git log
+   64  git status
+   65  nano README.md
+   66  cat README.md
+   67  git add .
+   68  git status
+   69  git commit -m "random readme changes"
+   70  git checkout history
+   71  cat README.md
+   72  rm README.md
+   73  echo "booya" > README.md
+   74  git add .
+   75  git commit -m "rewrote readme"
+   76  git checkout master
+   77  ls
+   78  git log
+   79  git checkout milkshake-flavours 
+   80  ls
+   81  git log
+   82  git checkout history 
+   83  ls
+   84  git log
+   85  git checkout master 
+   86  git merge milkshake-flavours 
+   87  ls
+   88  git log
+   89  git checkout history 
+   90  git log
+   91  git checkout milkshake-flavours 
+   92  git log
+   93  git checkout history 
+   94  git merge master 
+   95  mkdir jjj
+   96  cd jjj
+   97  git init
+   98  echo "This is a new README file" > README.md
+   99  cat README.md
+  100  git add README.md
+  101  git commit -m "README file added"
+  102  git status
+  103  git checkout -b "branch_to_create_merge_conflict"
+  104  git branch
+  105  This is a new README.md file
+  106  This is an edit on the branch
+  107  vim README.md
+  108  cd branch_to_create_merge_confict
+  109  cd git-basic-exercises/
+  110  git branch ls -a
+  111  ls
+  112  cd jjj
+  113  vim README.md
+  114  vim README.md
+  115  git add README.md
+  116  git commit -m "Edits made to README on the branch"
+  117  git --abort
+  118  git merge --abort
+  119  git add README.md
+  120  git commit -m "Edits made to README on the branch"
+  121  cd git-basic-exercises/
+  122  cd jjj/
+  123  git branch
+  124  vim README.md
+  125  cd git-basic-exercises/
+  126  cd jjj/
+  127  vim README.md
+  128  cd git-basic-exercises/
+  129  cd jjj/
+  130  cd git-basic-exercises/
+  131  mkdir jjj
+  132  cd jjj
+  133  git init
+  134  ls -l
+  135  cd git-basic-exercises/
+  136  mkdir jj
+  137  cd jj
+  138  ls -l
+  139  git init
+  140  echo "This is a new README file" > README.md
+  141  cat README.md
+  142  git add README.md
+  143  git commit -m "README file added"
+  144  git status
+  145  git checkout -b "branch_to_create_merge_conflict"
+  146  git branch
+  147  This is a new README file > README.md
+  148  vim README.md
+  149  git add README.md
+  150  git commit -m "Edits made to README on the branch"
+  151  cd git-basic-exercises/
+  152  mkdir jj
+  153  cd jj
+  154  ls -l
+  155  git init
+  156  echo "This is a new README file" > README.md
+  157  cat README.md
+  158  git add README.md
+  159  git commit -m "README file added"
+  160  git status
+  161  git checkout -b "branch_to_create_merge_conflict"
+  162  vim README.md
+  163  git add README.md
+  164  git commit -m "Edits made to README on the branch"
+  165  echo "This is an edit on the master branch" > README.md
+  166  git commit -m "Edits made to README on the master branch"
+  167  git add README.md
+  168  git commit -m "Edits made to README on the the master branch"
+  169  cd git-basic-exercises/
+  170  cd jj
+  171  git branch
+  172  echo "This is a new README file" > README.md
+  173  cd git-basic-exercises/
+  174  cd jj/
+  175  cd git-basic-exercises/
+  176  mkdir jj
+  177  cd jj
+  178  ls -l
+  179  git init
+  180  echo "This is a new README file" > README.md
+  181  cat README.md
+  182  git add README.md
+  183  git commit -m "README file added"
+  184  git status
+  185  git checkout -b "branch_to_create_merge_conflict"
+  186  git branch
+  187  vim README.md
+  188  git add README.md
+  189  git commit -m "Edits made to README on the branch"
+  190  git commit -m "Edits made to README on the branch"
+  191  git add README.md
+  192  git commit -m "Edits made to README on the branch"
+  193  git checkout master
+  194  git add README.md
+  195  git commit -m "Edits made to README on the master branch"
+  196  git add README.md
+  197  git branch
+  198  git merge branch_to_create_merge_conflict
+  199  cd git-basic-exercises/
+  200  cd jj
+  201  echo "This is a new README file" > README.md
+  202  cat README.md
+  203  git add README.md
+  204  git commit -m "README file added"
+  205  cd git-basic-exercises/
+  206  mkdir jj
+  207  cd jj
+  208  ls -l
+  209  git init
+  210  echo "This a new README file" > README.md
+  211  cat README.md
+  212  git add README.md
+  213  git commit -m "README file added"
+  214  git status
+  215  git checkout -b "branch_to_create_merge_conflict"
+  216  git branch
+  217  vim README.md
+  218  git add README.md
+  219  git commits -m "Edits made to README on the branch"
+  220  git commit -m "Edits made to README on the branch"
+  221  git checkout master 
+  222  git add README.md
+  223  git commit -m "Edits made to README on the master branch"
+  224  git branch
+  225  git merge branch_to_create_merge_conflict
+  226  git status
+  227  vim README.md
+  228  git status
+  229  git add README.md
+  230  git status
+  231  git commit
+  232  cd..
+  233  cd ..
+  234  git merge master
+  235  git log
+  236  git master
+  237  git checkout master
+  238  cd jj
+  239  git commit
+  240  git status
+  241  cd git-basic-exercises/
+  242  mkdir
+  243  mkdir jj
+  244  cd jj
+  245  ls -l
+  246  git init
+  247  echo "This is a new README file" > README.md
+  248  cat README.md
+  249  git commit -m "README file added"
+  250  git add README.md
+  251  git commit -m "README file"
+  252  git status
+  253  git checkout -b "branch_to_create_merge_conflict"
+  254  git branch
+  255  vim README.md
+  256  git add README.md
+  257  git commit -m "Edits made to README on the branch"
+  258  git checkout master
+  259  git add README.md
+  260  git commit -m "Edits made to README on the master branch"
+  261  git branch
+  262  git merge branch_to_create_merge_conflict
+  263  vim README.md
+  264  git status
+  265  git add README.md
+  266  git status
+  267  git commit
+  268  git checkout master
+  269  cd ..
+  270  git merge master
+  271  git log
+  272  git checkout master
+  273  git merge master
+  274  git log
+  275  git checkout master
+  276  git checkout master
+  277  git checkout master
+  278  git log
+  279  git remote add origin https://github.com/PhilaNgcamu/git-basic-exercises.git
+  280  git branch -M main
+  281  git push -u origin main
+  282  cd git-basic-exercises/
+  283  git user.name
+  284  git --global
+  285  git config --global user.name "PhilaNgcamu"
+  286  git config --global user.email "philangcamu17@gmail.com"
+  287  cd git-basic-exercises/
+  288  cd git-basic-exercises/
+  289  cd git-basic-exercises/
+  290  mkdir
+  291  mkdir git-basic-exercises
+  292  cd git-basic-exercises/
+  293  ls -a
+  294  git init
+  295  ls -a
+  296  git status
+  297  touch README.md
+  298  ls -a
+  299  git status
+  300  git log
+  301  git add .
+  302  git status
+  303  git reset -- README.md
+  304  git status
+  305  git add .
+  306  git commit -m "initial commit"
+  307  git log
+  308  nano README.md
+  309  cat README.md
+  310  git status
+  311  git add .
+  312  git commit -m "second commit"
+  313  nano README.md
+  314  cat README.md
+  315  git add .
+  316  git commit -m "third commit"
+  317  git log
+  318  git checkout 2ee14ee86f88bf0ecb1447b32d8973af5a0e9c07
+  319  cat README.md
+  320  git checkout master
+  321  cat README.md
+  322  git branch milkshake-flavours
+  323  git branch
+  324  git checkout milkshake-flavours 
+  325  git branch
+  326  nano milkshakes.md
+  327  git status
+  328  git add .
+  329  git commit -m "added initial flavours"
+  330  git log
+  331  git checkout master
+  332  git branch history
+  333  git checkout history
+  334  git log
+  335  history > history.txt
